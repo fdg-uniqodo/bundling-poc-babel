@@ -1,4 +1,4 @@
-
+import printMe from './print.js';
 
 function component() {
   var element = document.createElement('div');
@@ -6,7 +6,7 @@ function component() {
 
   element.innerHTML = 'hello code';
   btn.innerHTML = 'Click me and check the console!';
-//   btn.onclick = printMe;
+  btn.onclick = printMe;
 
   element.appendChild(btn);
 
